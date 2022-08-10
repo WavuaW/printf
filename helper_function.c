@@ -7,6 +7,7 @@
  * @s: string to reverse
  * Return: A pointer to a character
  */
+
 char *rev_string(char *s)
 {
 	int len;
