@@ -73,8 +73,8 @@ int print_octal(va_list list)
 	if (octal_rep == NULL)
 		return (-1);
 	for (len = 0; num > 0; len++)
-	{
-         	octal_rep[len] = (num % 8) + 48;
+        {
+		octal_rep[len] = (num % 8) + 48;
 		num = num / 8;
 
 	}
@@ -90,7 +90,7 @@ int print_octal(va_list list)
 }
 
 /**
- * print_hex - Prints a representation of a decimal number on base16 lowercase
+* print_hex - Prints a representation of a decimal number on base16 lowercase
  * @list: List of the arguments passed to the function
  * Return: Number of characters printed
  */
