@@ -1,4 +1,4 @@
-#innclude "main.h"
+#include "main.h"
 #include <stdio.h>
 int hex_check(int, char);
 
@@ -74,7 +74,7 @@ int print_octal(va_list list)
 		return (-1);
 	for (len = 0; num > 0; len++)
 	{
-         	octal_rep[len] = (num % 8) + 48;
+		octal_rep[len] = (num % 8) + 48;
 		num = num / 8;
 
 	}
