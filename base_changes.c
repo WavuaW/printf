@@ -2,7 +2,6 @@
 #include <stdio.h>
 int hex_check(int, char);
 
-
 /**
  * print_binary - Convert a number from base 10 to binary
  * @list: List of arguments passed to this function
@@ -14,7 +13,6 @@ int print_binary(va_list list)
 	int i, len;
 	char *str;
 	char *rev_str;
-
 
 	num = va_arg(list, unsigned int);
 	if (num == 0)
@@ -33,7 +31,6 @@ int print_binary(va_list list)
 		else
 			str[i] = '1';
 		num = num / 2;
-
 	}
 	str[i] = '\0';
 	rev_str = rev_string(str);
@@ -45,23 +42,19 @@ int print_binary(va_list list)
 	return (len);
 }
 
-
 /**
  * print_octal - Prints the numeric representation of a number in octal base
  * @list: List of all the arguments passed to the program
  * Return: Number of symbols printed to stdout
  */
 int print_octal(va_list list)
-
 {
 	unsigned int num;
 	int len;
 	char *octal_rep;
 	char *rev_str;
 
-
 	num = va_arg(list, unsigned int);
-
 
 	if (num == 0)
 		return (_write_char('0'));
@@ -135,7 +128,6 @@ int print_hex(va_list list)
 }
 
 
-
 /**
  * print_heX - Prints a representation of a decimal number on base16 Uppercase
  * @list: List of the arguments passed to the function
@@ -150,7 +142,6 @@ int print_heX(va_list list)
 	char *rev_hex;
 
 	num = va_arg(list, unsigned int);
-
 
 	if (num == 0)
 		return (_write_char('0'));
@@ -192,7 +183,6 @@ int hex_check(int num, char x)
 {
 	char *hex = "abcdef";
 	char *Hex = "ABCDEF";
-
 
 	num = num - 10;
 	if (x == 'x')
