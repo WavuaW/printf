@@ -1,5 +1,4 @@
-#include "main.h"
-
+nclude "main.h"
 /**
  * print_char - Prints character
  * @list: lists of arguments
@@ -29,7 +28,6 @@ int print_string(va_list list)
 	return (i);
 }
 
-
 /**
  * print_percent - Prints a percent symbol
  * @list: list of arguments
@@ -41,7 +39,6 @@ int print_percent(__attribute__((unused))va_list list)
 	return (1);
 }
 
-
 /**
  * print_integer - Prints an integer
  * @list: list of arguments
@@ -51,11 +48,9 @@ int print_integer(va_list list)
 {
 	int num_length;
 
-
 	num_length = print_number(list);
 	return (num_length);
 }
-
 
 /**
  * unsigned_integer - Prints Unsigned integers
@@ -63,13 +58,10 @@ int print_integer(va_list list)
  * Return: a count of the numbers
  */
 int unsigned_integer(va_list list)
-
 {
 	unsigned int num;
 
-
 	num = va_arg(list, unsigned int);
-
 
 	if (num == 0)
 		return (print_unsgined_number(num));
